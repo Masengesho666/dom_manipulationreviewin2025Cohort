@@ -9,7 +9,7 @@
 <div class="container">
     <h1 id="main-heading">Master dom manipulation : part 1</h1>
     <ul>
-        <li class="list-items">the matrix</li>
+        <li class="list-items">Neo matrix</li>
         <li class="list-items">star wars</li>
         <li class="list-items">Harry porters</li>
         <li class="list-items">Lord of the rings</li>
@@ -57,10 +57,35 @@
 // const container = document.querySelectorAll("div");
 // console.log(container);
 
+  //Dom manipulation
 
-const title = document.querySelector("#main-heading");
-title.style.color = "red";
-console.log(title);
+  //styling elements
+
+// const title = document.querySelector("#main-heading");
+// title.style.color = "red";
+// const listitems = document.querySelectorAll(".list-items");
+
+//  for (let i = 0; i < listitems.length; i++) {
+// listitems[i].style.fontSize = "2rem";
+    
+//  }
+
+
+//Creating an element
+
+const ul = document.querySelector("ul");
+const li = document.createElement("li") ;
+
+//Addings element
+ul.append(li);
+
+//modifying a text
+
+const firstlistitem = document.querySelector(".list-items");
+
+console.log(firstlistitem.innerText);
+console.log(firstlistitem.textContent);
+console.log(firstlistitem.innerHTML);
 
     </script>
 
